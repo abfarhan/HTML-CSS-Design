@@ -1,0 +1,197 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:400,500,700,900&display=swap');
+@import url("https://unpkg.com/ionicons@4.5.10-0/dist/css/ionicons.min.css");
+
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    display: grid;
+    place-items: center;
+    width: 100vw;
+    height: 100vh;
+    background-color: #f5f6f7;
+    font-family: 'Roboto', sans-serif;
+}
+
+.mplayer {
+    background-color: #f5f6f7;
+    box-shadow: -4px -2px 4px 0px  #ffffff, 4px 2px 6px 0px #DFE4EA;
+    width: 260px;
+    height: 420px;
+    border-radius: 20px;
+}
+
+.mplayer-head {
+    height: 60%;
+    padding: 20px;
+}
+
+.head-btn,.body-button {
+    display: flex;
+    justify-content: space-between;
+}
+.head-btn .m-btn-medium {
+    font-size: 20px;
+}
+
+/* .back-btn,.more-btn {
+    position: relative;
+    background: inherit;
+    outline: none;
+    border: none;
+    box-shadow: -4px -2px 4px 0px  #ffffff, 4px 2px 6px 0px #DFE4EA;
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    cursor: pointer;
+    color: #616161;
+    font-size: 20px;
+}
+.back-btn:active::after,
+.more-btn:active::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+  
+    width: 2.2rem;
+    height: 2.2rem;
+    border-radius: 50%;
+    box-shadow: 2px 2px 2px 0px #DFE4EA inset, -2px -2px 2px 0px #ffffff inset;
+} */
+
+
+
+.song-desc {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: #616161;
+}
+.song-desc label {
+    font-size: 18px;
+    font-weight: 500;
+}
+.song-desc p {
+    font-size: 13px;
+}
+
+.circle {
+    position: relative;
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+    margin: 15px auto 0px auto;
+    border: 3px solid #f1f8fd;
+    box-shadow:
+    20px 20px 20px rgba(0,0,0,0.07),
+    -20px -20px 20px rgba(255,255,255,0.7),
+    6px 6px 6px rgba(0,0,0,0.09),
+    -6px -6px 6px rgba(255,255,255,0.9);
+}
+
+.circle::after {
+    content: '';
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+    /* top: 30px;
+    left: 30px; */
+    background-color: #f1f8fd;
+    display: block;
+    box-shadow:
+    inset 5px 5px 5px rgba(0,0,0,0.07),
+    inset -5px -5px 5px rgba(255,255,255,0.7);
+}
+
+.music {
+    position: absolute;
+    color: #1745a1;
+    top: 7px;
+    left: 24px;
+    font-size: 4.5rem;
+}
+
+.m-progress {
+    position: relative;
+    margin: 0 auto;
+    top: -20px;
+    width: 12rem;
+    height: .5rem;
+    border-radius: 5px;
+    box-shadow: 2px 2px 2px 0px #DFE4EA inset, -2px -2px 2px 0px #ffffff inset;
+}
+
+.m-progress::before {
+    content: "";
+    position: absolute;
+    top: 0px;
+    width: 5.5rem;
+    height: .5rem;
+    border-radius: 5px;
+    background: linear-gradient(to right, #003196, #3dbcfb);
+}
+
+.m-progress::after {
+    content: "";
+    position: absolute;
+    top: -4px;
+    left: 80px;
+    width: 12px;
+    height: 12px;
+    background: #ffffff;
+    border-radius: 50%;
+    border: 3px solid #cacaca;
+}
+
+.pbuttons ul {
+    display: inline-flex;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.pbuttons li {
+    list-style: none;
+}
+
+.m-btn {
+    position: relative;
+    background: inherit;
+    outline: none;
+    border: none;
+    border-radius: 50%;
+    width: 2.2rem;
+    height: 2.2rem;
+    color: #807e7e;
+    padding: 0.5rem 0;
+    cursor: pointer;
+}
+.m-btn:active::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    /* right: 0;
+    bottom: 0; */
+    width: 2.2rem;
+    height: 2.2rem;
+    border-radius: 50%;
+    box-shadow: 2px 2px 2px 0px #DFE4EA inset, -2px -2px 2px 0px #ffffff inset;
+}
+.m-btn-medium,.m-btn-large {
+    margin: 0.3rem;
+    box-shadow: -4px -2px 4px 0px  #ffffff, 4px 2px 6px 0px #DFE4EA;
+}
+.m-btn-large {
+    width: 65px;
+    height: 65px;
+    font-size: 35px;
+    color: #003196;
+}
+.m-btn-large:active::after {
+    width: 65px;
+    height: 65px;
+}
